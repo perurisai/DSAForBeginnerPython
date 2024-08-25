@@ -49,11 +49,13 @@ def find_pairs_with_given_sum(arr, target):
     return pairs
 
 
-""" Example usage:
+# Example usage:
 arr = [1, 2, 3, 4, 4, 5, 6, 7, 8, 9]
 target = 8
 result = find_pairs_with_given_sum(arr, target)
 print(f"Pairs with sum {target}: {result}")
+
+"""
 Explanation:
 Two Pointers: 
   `left` starts at the beginning, and `right` starts at the end.
@@ -67,7 +69,8 @@ For the array `[1, 2, 3, 4, 4, 5, 6, 7, 8, 9]` and `target = 8`:
 The pairs that sum up to `8` are `(1, 7)`, `(2, 6)`, `(3, 5)`, and `(4, 4)`.
 
  Complexity:
-Time Complexity: \(O(n)\), where \(n\) is the number of elements in the array. Each element is considered at most once by either pointer.
-Space Complexity: \(O(1)\) if we ignore the space needed to store the pairs. Otherwise, \(O(k)\) where \(k\) is the number of pairs.
+Time Complexity: O(n), where n is the number of elements in the array. Each element is considered at most once by either pointer.
+Space Complexity: O(1) if we ignore the space needed to store the pairs. Otherwise, O(k) where Kis the number of pairs.
 
-This approach is efficient and takes advantage of the sorted nature of the array to find all pairs with the given sum in linear time."""
+This approach is efficient and takes advantage of the sorted nature of the array to find all pairs with the given sum in linear time.
+"""
